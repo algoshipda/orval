@@ -47,6 +47,7 @@ export type NormalizedOutputOptions = {
   tslint: boolean;
   tsconfig?: Tsconfig;
   packageJson?: PackageJson;
+  typescriptVersion?: string;
   headers: boolean;
 };
 
@@ -149,6 +150,7 @@ export type OutputOptions = {
   prettier?: boolean;
   tslint?: boolean;
   tsconfig?: string | Tsconfig;
+  typescriptVersion?: string;
   packageJson?: string;
   headers?: boolean;
 };
@@ -363,6 +365,7 @@ export interface GlobalOptions {
   mode?: OutputMode;
   tsconfig?: string | Tsconfig;
   packageJson?: string;
+  typescriptVersion?: string;
 }
 
 export interface Tsconfig {

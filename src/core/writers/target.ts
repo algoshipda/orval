@@ -53,6 +53,7 @@ export const generateTarget = (
         );
 
         const typescriptVersion =
+          options.typescriptVersion ??
           options.packageJson?.dependencies?.['typescript'] ??
           options.packageJson?.devDependencies?.['typescript'] ??
           '4.4.0';

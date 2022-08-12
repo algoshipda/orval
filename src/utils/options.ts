@@ -18,6 +18,7 @@ import {
   OutputMode,
   SwaggerParserOptions,
 } from '../types';
+
 import { githubResolver } from './github';
 import { isBoolean, isFunction, isObject, isString } from './is';
 import { mergeDeep } from './mergeDeep';
@@ -106,6 +107,7 @@ export const normalizeOptions = async (
       prettier: outputOptions.prettier ?? prettier ?? false,
       tslint: outputOptions.tslint ?? tslint ?? false,
       tsconfig,
+      typescriptVersion: outputOptions.typescriptVersion,
       packageJson,
       headers: outputOptions.headers ?? false,
       override: {
